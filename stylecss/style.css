@@ -1,0 +1,204 @@
+@charset "UT-8";
+
+
+
+@font-face{
+    font-family: "android";
+    src: url('/DESAFIO2.0/fontes/idroid.otf') format("opentype");
+    font-weight: normal;
+}
+
+:root{
+    --cor0: green;
+    --cor1: red;
+    --cor2: yellow;
+    --cor3: blue;
+
+    --font-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque:'Oswald', sans-serif;
+    --fonte-android: 'android', "cursive";
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: lightgreen;
+    font-family: var(--fonte-android);
+}
+
+a.externo::after{
+    content: "\00a0\1f517";
+}
+
+
+main{
+    font-family: var(--fonte-android);
+
+    min-width: 300px;
+    max-width: 1000;
+    margin: 40px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 0px 5px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+div.video{
+    background-color: rgb(63, 128, 63);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 45%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+header{
+    background-image: linear-gradient(to bottom,rgb(121, 231, 121), rgb(56, 206, 56), rgb(13, 163, 13));
+    max-height: 350px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 2.0em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px black;
+}
+
+header > p{
+    font-family: var(--fonte-android);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px black;
+}
+
+
+main h1{
+    font-family: arial;
+}
+
+main h2{
+    font-family: var(--fonte-android);
+    color: white;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right,rgb(13, 73, 13), transparent);
+    text-indent: 8px;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong{
+    color: darkgreen;
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(129, 12, 12);
+    background-color: rgb(235, 154, 154);
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: brown;
+}
+
+nav{
+    background-color: darkgreen;
+    padding: 10px;
+    box-shadow: 0px 3px 14px black
+}
+
+nav > a{
+    color: rgb(170, 240, 170);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+aside{
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
+}
+
+aside > h3{
+    background-color: rgb(12, 82, 12);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-type: "\2714\00a0\00a0";
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer{
+    background-color: rgb(6, 54, 18);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer > p > a{
+    color: rgb(229, 145, 145);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: lightgreen;
+}
+
